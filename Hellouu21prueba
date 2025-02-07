@@ -1,0 +1,125 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hellouu21</title>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    /* Contenedor para alinear los botones en fila */
+    .button-container {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Estilos para el título */
+    h1 {
+      text-align: center;
+      font-family: 'Fredoka One', sans-serif;
+      font-size: 60px; /* Tamaño más grande */
+      font-weight: 700;
+    }
+
+    /* Estilos para los botones */
+    .neu-button {
+      background-color: #ffffff;
+      border-radius: 10px;
+      box-shadow: inset 1px 1px 3px #bcbcbc, inset -4px -4px 10px #ffffff;
+      color: #4d4d4d;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 15px 40px;
+      transition: all 0.2s ease-in-out;
+      border: 2px solid rgb(206, 206, 206);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+    }
+
+    /* Efecto hover */
+    .neu-button:hover {
+      box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+    }
+
+    /* Estilo cuando el botón está enfocado */
+    .neu-button:focus {
+      outline: none;
+      box-shadow: inset 2px 2px 5px #bcbcbc, inset -2px -2px 5px #ffffff, 2px 2px 5px #bcbcbc, -2px -2px 5px #ffffff;
+    }
+
+    /* Estilos para la imagen dentro del botón */
+    .neu-button img {
+      width: 100px;
+      height: 100px;
+    }
+
+    /* Estilos para el botón deshabilitado */
+    .neu-button:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+      box-shadow: none;
+    }
+
+    /* Contenedor del video */
+    .video-container {
+      display: flex;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    /* Sección a donde se redirige el botón */
+    #gracias {
+      text-align: center;
+      font-family: 'Montserrat', sans-serif;
+      margin-top: 1000px; /* Espacio grande antes del texto */
+    }
+
+    /* Estilo del mensaje de agradecimiento */
+    #gracias h2 {
+      font-size: 32px;
+      font-weight: 700; /* Negrita */
+    }
+
+    #gracias p {
+      font-size: 24px;
+      font-weight: 400; /* Normal (no negrita) */
+      margin-bottom: 1000px; /* Espacio después del texto */
+    }
+
+  </style>
+</head>
+<body>
+
+  <h1>¿ME PERDONAS?</h1>
+
+  <div class="button-container">
+    <!-- Primer botón habilitado que redirige a la sección "gracias" -->
+    <a href="#gracias" class="neu-button">
+      <img src="https://mystickermania.com/cdn/stickers/disney-cartoons/owl-house-amity-blight-happy-512x512.png" alt="Imagen del botón">
+      <strong>Sí, obvioo 😻</strong>
+    </a>
+
+    <!-- Segundo botón idéntico pero deshabilitado -->
+    <button class="neu-button" disabled>
+      <img src="https://mystickermania.com/cdn/stickers/disney-cartoons/owl-house-amity-blight-happy-512x512.png" alt="Imagen del botón">
+      <strong>Noo, fakiu 🤬</strong>
+    </button>
+  </div>
+
+  <!-- Video incrustado -->
+  <div class="video-container">
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/MHCsrKA9gh8?autoplay=1" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+  </div>
+
+  <!-- Sección donde redirige el botón -->
+  <section id="gracias">
+    <h2>Gracias por perdonarme ♡</h2>
+    <p>I love youuuuuu</p>
+  </section>
+
+</body>
+</html>
